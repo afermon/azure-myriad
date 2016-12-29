@@ -4,7 +4,7 @@
   "parameters": {
     "vmSku": {
       "type": "string",
-      "defaultValue": "Standard_D1",
+      "defaultValue": "Standard_A0",
       "metadata": {
         "description": "Size of VMs in the VM Scale Set."
       }
@@ -265,8 +265,8 @@
                   "autoUpgradeMinorVersion": true,
                   "settings": {
                     "fileUris": [
-                      "https://raw.githubusercontent.com/gbowerman/azure-myriad/master/vmss-ubuntu-scale/installserver.sh",
-                      "https://raw.githubusercontent.com/gbowerman/azure-myriad/master/vmss-ubuntu-scale/workserver.py"
+                      "https://raw.githubusercontent.com/afermon/azure-myriad/master/vmss-ubuntu-scale/installserver.sh",
+                      "https://raw.githubusercontent.com/afermon/azure-myriad/master/vmss-ubuntu-scale/workserver.py"
                     ],
                     "commandToExecute": "bash installserver.sh"
                   }
@@ -294,7 +294,7 @@
             "name": "Profile1",
             "capacity": {
               "minimum": "1",
-              "maximum": "10",
+              "maximum": "30",
               "default": "1"
             },
             "rules": [

@@ -10,7 +10,8 @@ from bottle import route, run
 
 hostname = socket.gethostname()
 hostport = 9000
-keepworking = False  # boolean to switch worker thread on or off
+keepworking = True  # boolean to switch worker thread on or off
+# Start worker on so we can see it auto scale
 
 
 # thread which maximizes CPU usage while the keepWorking global is True
